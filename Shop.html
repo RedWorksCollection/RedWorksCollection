@@ -4,6 +4,34 @@
 </head>
 <link rel=stylesheet href=Finals.css?>
 <body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var rentButton = document.querySelector('.Rent');
+    
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('click', function() {
+                var anyChecked = Array.from(checkboxes).some(function(cb) {
+                    return cb.checked;
+                });
+                rentButton.disabled = !anyChecked;
+            });
+        });
+        
+        rentButton.addEventListener('click', function() {
+            var userEmail = prompt("Please enter your email to proceed with the rental process:");
+    
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (userEmail && emailPattern.test(userEmail)) {
+                alert("Thank you for renting with us! We will send the rental details to " + userEmail + ".");
+            } else {
+                if (userEmail !== null) {
+                    alert("Invalid email format. Please enter a valid email address to proceed.");
+                }
+            }
+        });
+    });
+</script>
 <div id=div0>
 
 <span class=slide>Mark Delos Santos' best designs. Order Now!!!</span>
