@@ -587,7 +587,82 @@ animation-iteration-count: infinite;
   75% {left:0px; top:0px;}
   100%{left:0px; top:0px;}
 
+} //comment
+
+body {
+    background: linear-gradient(white, white, white);
 }
 
-@media only screen and (max-width: 500px){.responsive{ width: 100%; } }
+/* Adjustments for mobile devices */
+#div0 {
+    padding-top: 1%;
+    width: 100%; /* Adjusted for mobile devices */
+    height: auto; /* Adjusted for mobile devices */
+    min-width: 0; /* Adjusted for mobile devices */
+    max-width: 100%; /* Adjusted for mobile devices */
+}
+
+#div1 {
+    margin-top: 10%; /* Adjusted for mobile devices */
+    width: 80%; /* Adjusted for mobile devices */
+}
+
+.search {
+    margin-top: 6%;
+    margin-left: 2%;
+    width: 70%; /* Adjusted for mobile devices */
+}
+
+.button {
+    margin-top: 6%;
+    margin-left: 15%; /* Adjusted for mobile devices */
+}
+
+#RWC2 {
+    height: auto; /* Adjusted for mobile devices */
+    width: 80%; /* Adjusted for mobile devices */
+    margin-top: 5%;
+    margin-left: 10%; /* Adjusted for mobile devices */
+}
+
+#div2 {
+    width: 100%; /* Adjusted for mobile devices */
+    padding-top: 5%; /* Adjusted for mobile devices */
+    margin-top: 15%; /* Adjusted for mobile devices */
+    max-width: 100%; /* Adjusted for mobile devices */
+}
+
+.Home, .Shop, .Cont, .About, .Loc {
+    margin-left: 5%; /* Adjusted for mobile devices */
+}
+
+#markbw {
+    height: auto; /* Adjusted for mobile devices */
+    width: 80%; /* Adjusted for mobile devices */
+    margin-top: 2%;
+    margin-left: 10%; /* Adjusted for mobile devices */
+}
+
+#div3, #div4, #div5 {
+    margin-top: 10%; /* Adjusted for mobile devices */
+    width: 100%; /* Adjusted for mobile devices */
+    max-width: 100%; /* Adjusted for mobile devices */
+}
+
+.underline00, .copyright00, .copyright01 {
+    margin-left: 5%; /* Adjusted for mobile devices */
+}
+
+.inq {
+    margin-top: 5%; /* Adjusted for mobile devices */
+    margin-left: 10%; /* Adjusted for mobile devices */
+    font-size: 1.5em; /* Adjusted for mobile devices */
+}
+
+@media only screen and (max-width: 500px) {
+    /* Additional adjustments for smaller mobile screens */
+    .responsive {
+        width: 100%;
+    }
+}
 
