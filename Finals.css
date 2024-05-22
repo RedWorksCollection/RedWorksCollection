@@ -1,3 +1,4 @@
+@media only screen and (max-width: 500px){.responsive{ width: 100%; } }
 body{
 background:linear-gradient(white,white,white);
 }
@@ -461,8 +462,8 @@ animation-direction:reverse;
 animation-duration:4s;
 }
 @keyframes markcon{
-	0% {transform: rotateX(0deg);
-	}100% {transform: rotateY(360deg);}
+0% {transform: rotateX(0deg);
+}100% {transform: rotateY(360deg);}
 }
 .line{
 margin-top: 17%;		
@@ -588,6 +589,4 @@ animation-iteration-count: infinite;
   100%{left:0px; top:0px;}
 
 }
-
-@media only screen and (max-width: 500px){.responsive{ width: 100%; } }
 
